@@ -1,5 +1,39 @@
 // Styling for the services section
 .service-heading {
-  margin: 15px 0;
-  text-transform: none;
+	margin: 10px 0;
+	text-transform: none;
+}
+#services {
+	padding-top: 100px;
+	background-color: $background;
+	img {
+		border-radius: 50%;
+	}
+	.orange-header {
+		color: $custom-dark-orange;
+	}
+	.service {
+		margin-bottom: 20px;
+		.price-sticker {
+			position: absolute;
+			bottom: 0;
+			border-radius: 5px;
+			font-size: 18px;
+			padding: 10px;
+			color: $white;
+			text-align: center;
+			background-color: $custom-orange;
+			font-weight: bold;
+		}
+
+		&-left {
+			.price-sticker {
+				right: 0;
+			}
+		}
+		&-right {
+			text-align: right;
+		}
+		
+	}
 }

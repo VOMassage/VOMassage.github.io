@@ -1,6 +1,6 @@
 /*!
  * Start Bootstrap - Agency v4.0.0-beta.2 (https://startbootstrap.com/template-overviews/agency)
- * Copyright 2013-2017 Start Bootstrap
+ * Copyright 2013-2018 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-agency/blob/master/LICENSE)
  */
 body {
@@ -39,7 +39,7 @@ section {
     font-style: italic;
     margin-bottom: 75px;
     text-transform: none;
-    font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+    font-family: 'roboto'; }
 
 @media (min-width: 768px) {
   section {
@@ -91,11 +91,10 @@ body {
     border: 0;
     background-color: #fed136;
     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
-  #mainNav .navbar-brand {
-    color: #fed136;
-    font-family: 'Kaushan Script', 'Helvetica Neue', Helvetica, Arial, cursive; }
-    #mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
-      color: #fec503; }
+  #mainNav .navbar-brand .logo-top {
+    height: 35px;
+    margin: 6px;
+    transition: all .3s; }
   #mainNav .navbar-nav .nav-item .nav-link {
     font-size: 90%;
     font-weight: 400;
@@ -115,20 +114,24 @@ body {
     transition: padding-top 0.3s, padding-bottom 0.3s;
     border: none;
     background-color: transparent; }
-    #mainNav .navbar-brand {
-      font-size: 1.75em;
-      -webkit-transition: all 0.3s;
-      -moz-transition: all 0.3s;
-      transition: all 0.3s; }
+    #mainNav .navbar-brand .logo-top {
+      height: 60px;
+      margin: 6px;
+      transition: all .3s; }
     #mainNav .navbar-nav .nav-item .nav-link {
       padding: 1.1em 1em !important; }
     #mainNav.navbar-shrink {
       padding-top: 0;
       padding-bottom: 0;
       background-color: #212529; }
-      #mainNav.navbar-shrink .navbar-brand {
-        font-size: 1.25em;
-        padding: 12px 0; } }
+      #mainNav.navbar-shrink .navbar-brand .logo-top {
+        height: 35px;
+        margin: 6px;
+        transition: all .3s; }
+        #mainNav.navbar-shrink .navbar-brand .logo-top:hover {
+          height: 37px;
+          margin: 5px;
+          transition: all .2s; } }
 
 header.masthead {
   text-align: center;
@@ -142,41 +145,69 @@ header.masthead {
   -o-background-size: cover;
   background-size: cover; }
   header.masthead .intro-text {
-    padding-top: 150px;
-    padding-bottom: 100px; }
+    padding-top: 80px;
+    padding-bottom: 155px; }
     header.masthead .intro-text .intro-lead-in {
-      font-size: 22px;
+      font-size: 25px;
       font-style: italic;
       line-height: 22px;
       margin-bottom: 25px;
-      font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+      font-family: 'mistral'; }
     header.masthead .intro-text .intro-heading {
       font-size: 50px;
       font-weight: 700;
       line-height: 50px;
       margin-bottom: 25px;
       font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+    header.masthead .intro-text .intro-lead-in-logo {
+      height: 150px; }
 
 @media (min-width: 768px) {
   header.masthead .intro-text {
-    padding-top: 300px;
-    padding-bottom: 200px; }
+    padding-top: 150px;
+    padding-bottom: 280px; }
     header.masthead .intro-text .intro-lead-in {
       font-size: 40px;
       font-style: italic;
       line-height: 40px;
       margin-bottom: 25px;
-      font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+      font-family: 'mistral'; }
     header.masthead .intro-text .intro-heading {
       font-size: 75px;
       font-weight: 700;
       line-height: 75px;
       margin-bottom: 50px;
-      font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; } }
+      font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+    header.masthead .intro-text .intro-lead-in-logo {
+      height: 250px; } }
 
 .service-heading {
-  margin: 15px 0;
+  margin: 10px 0;
   text-transform: none; }
+
+#services {
+  padding-top: 100px;
+  background-color: #DAD9D7; }
+  #services img {
+    border-radius: 50%; }
+  #services .orange-header {
+    color: #C97214; }
+  #services .service {
+    margin-bottom: 20px; }
+    #services .service .price-sticker {
+      position: absolute;
+      bottom: 0;
+      border-radius: 5px;
+      font-size: 18px;
+      padding: 10px;
+      color: #fff;
+      text-align: center;
+      background-color: #FB8F19;
+      font-weight: bold; }
+    #services .service-left .price-sticker {
+      right: 0; }
+    #services .service-right {
+      text-align: right; }
 
 #portfolio .portfolio-item {
   right: 0;
@@ -225,7 +256,7 @@ header.masthead {
       font-size: 16px;
       font-style: italic;
       margin: 0;
-      font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+      font-family: 'roboto'; }
 
 #portfolio * {
   z-index: 2; }
@@ -251,7 +282,7 @@ header.masthead {
       font-size: 16px;
       font-style: italic;
       margin: 20px 0 30px;
-      font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+      font-family: 'roboto'; }
     .portfolio-modal .modal-content ul.list-inline {
       margin-top: 0;
       margin-bottom: 30px; }
