@@ -12,13 +12,10 @@
     @include heading-font;
   }
   .navbar-brand {
-    color: $primary;
-    @include script-font;
-    &.active,
-    &:active,
-    &:focus,
-    &:hover {
-      color: darken($primary, 10%);
+    .logo-top {
+      height: 35px;
+      margin: 6px;
+      transition: all .3s;
     }
   }
   .navbar-nav {
@@ -48,10 +45,11 @@
     border: none;
     background-color: transparent;
     .navbar-brand {
-      font-size: 1.75em;
-      -webkit-transition: all 0.3s;
-      -moz-transition: all 0.3s;
-      transition: all 0.3s;
+      .logo-top {
+        height: 60px;
+        margin: 6px;
+        transition: all .3s;
+      }
     }
     .navbar-nav {
       .nav-item {
@@ -65,8 +63,17 @@
       padding-bottom: 0;
       background-color: $gray-900;
       .navbar-brand {
-        font-size: 1.25em;
-        padding: 12px 0;
+        .logo-top {
+          height: 35px;
+          margin: 6px;
+          transition: all .3s;
+
+          &:hover {
+            height: 37px;
+            margin: 5px;
+            transition: all .2s;
+          }
+        }
       }
     }
   }

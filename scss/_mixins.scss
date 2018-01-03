@@ -9,7 +9,7 @@
 
 // Font Mixins
 @mixin serif-font {
-  font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'roboto';
 }
 @mixin script-font {
   font-family: 'Kaushan Script', 'Helvetica Neue', Helvetica, Arial, cursive;
@@ -19,4 +19,7 @@
 }
 @mixin heading-font {
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+@mixin mistral {
+  font-family: 'mistral';
 }
