@@ -182,11 +182,14 @@ header.masthead {
       height: 250px; } }
 
 .service-heading {
-  margin: 10px 0;
-  text-transform: none; }
+  text-transform: none;
+  font-weight: 400;
+  font-family: Roboto, sans-serif;
+  padding-bottom: 50px; }
 
 #services {
-  padding-top: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   background-color: #DAD9D7; }
   #services img {
     border-radius: 50%; }
@@ -321,6 +324,15 @@ header.masthead {
         -ms-transform: rotate(90deg);
         transform: rotate(90deg);
         background-color: #212529; }
+
+#about-us {
+  background-color: #DAD9D7; }
+  #about-us .border-right {
+    border-right: 1px solid black; }
+  #about-us .to-bottom {
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 0; }
 
 .timeline {
   position: relative;
@@ -508,35 +520,12 @@ section#contact {
     color: #ced4da;
     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
 
-footer {
-  padding: 25px 0;
-  text-align: center; }
-  footer span.copyright {
-    font-size: 90%;
-    line-height: 40px;
-    text-transform: none;
-    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
-  footer ul.quicklinks {
-    font-size: 90%;
-    line-height: 40px;
-    margin-bottom: 0;
-    text-transform: none;
-    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+#map {
+  height: 500px; }
 
-ul.social-buttons {
-  margin-bottom: 0; }
-  ul.social-buttons li a {
-    font-size: 20px;
-    line-height: 40px;
-    display: block;
-    width: 40px;
-    height: 40px;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    transition: all 0.3s;
-    color: white;
-    border-radius: 100%;
-    outline: none;
-    background-color: #212529; }
-    ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
-      background-color: #fed136; }
+footer {
+  height: 75px;
+  background-color: #9C9C9C;
+  text-align: center; }
+  footer img {
+    margin-top: 12.5px; }

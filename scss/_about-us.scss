@@ -1,0 +1,11 @@
+#about-us {
+	background-color: $background;
+	.border-right {
+		border-right: 1px solid black;
+	}
+	.to-bottom {
+		position: absolute;
+		bottom: 0;
+		padding-bottom: 0;
+	}
+}
