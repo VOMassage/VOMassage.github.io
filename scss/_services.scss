@@ -1,10 +1,13 @@
 // Styling for the services section
 .service-heading {
-	margin: 10px 0;
 	text-transform: none;
+	font-weight: 400;
+	font-family: Roboto, sans-serif;
+	padding-bottom: 50px;
 }
 #services {
-	padding-top: 100px;
+	padding-top: 50px;
+	padding-bottom: 50px;
 	background-color: $background;
 	img {
 		border-radius: 50%;

@@ -182,11 +182,14 @@ header.masthead {
       height: 250px; } }
 
 .service-heading {
-  margin: 10px 0;
-  text-transform: none; }
+  text-transform: none;
+  font-weight: 400;
+  font-family: Roboto, sans-serif;
+  padding-bottom: 50px; }
 
 #services {
-  padding-top: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   background-color: #DAD9D7; }
   #services img {
     border-radius: 50%; }
@@ -507,6 +510,9 @@ section#contact {
     font-weight: 700;
     color: #ced4da;
     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+
+#map {
+  height: 500px; }
 
 footer {
   padding: 25px 0;
