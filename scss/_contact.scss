@@ -1,49 +1,105 @@
 // Styling for the contact section
 section#contact {
-  background-color: $gray-900;
-  background-image: url('../img/map-image.png');
-  background-repeat: no-repeat;
-  background-position: center;
+  background-color: $background-dark;
   .section-heading {
     color: $white;
   }
   .form-group {
+    border: 1px solid transparent;
+    box-shadow: none;
     margin-bottom: 25px;
     input,
     textarea {
       padding: 20px;
     }
+    .bar {
+      position: relative;
+      display: block;
+    }
+
+    .bar:before,
+    .bar:after {
+      content: '';
+      height: 3px;
+      width: 0;
+      bottom: 63px;
+      position: absolute;
+      background: $white;
+      transition: 0.2s ease all;
+    }
+
+    .bar:before {
+      left: 50%;
+    }
+
+    .bar:after {
+      right: 50%;
+    }
+
+    input.form-control:focus ~ .bar:before,
+    input.form-control:focus ~ .bar:after {
+      width: 50%;
+    }
+
     input.form-control {
       height: auto;
+      background-color: $background;
+      color: white;
+      border-radius: 0;
     }
     textarea.form-control {
       height: 248px;
+      background-color: $background;
+      color: white;
+      resize: none;
     }
   }
-  .form-control:focus {
-    border-color: $primary;
+  .form-control:focus, .form-control:active {
     box-shadow: none;
+    border: 1px solid transparent;
   }
   ::-webkit-input-placeholder {
     font-weight: 700;
-    color: $gray-400;
-    @include heading-font;
+    color: $white;
+    @include roboto;
   }
   :-moz-placeholder {
     font-weight: 700;
-    color: $gray-400;
+    color: $white;
+    @include roboto;
     /* Firefox 18- */
-    @include heading-font;
   }
   ::-moz-placeholder {
     font-weight: 700;
-    color: $gray-400;
+    color: $white;
+    @include roboto;
     /* Firefox 19+ */
-    @include heading-font;
   }
   :-ms-input-placeholder {
     font-weight: 700;
-    color: $gray-400;
-    @include heading-font;
+    color: $white;
+    @include roboto;
+  }
+  .contact-info {
+    color: $white;
+    font-size: 22px;
+    @include roboto;
+  }
+  .contact-info-inner {
+    color: $white;
+    margin-left: 30px;
+    margin-bottom: 40px;
+    @include roboto;
+  }
+
+  .contact-info-links {
+     a {
+       color: $white;
+     }
+  }
+
+  .help-block {
+    @include roboto;
+    font-size: medium;
   }
 }

@@ -187,8 +187,6 @@
             <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</div>
           </div>
         </div>
-
-
       </div>
     </section>
 
@@ -495,38 +493,78 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">Contact Us</h2>
-            <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+            <h2 class="section-heading text-uppercase">Контакти</h2>
           </div>
         </div>
-        <div class="row">
+        <div class="row mt-6">
           <div class="col-lg-12">
             <form id="contactForm" name="sentMessage" novalidate>
               <div class="row">
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <input class="form-control" id="name" type="text" placeholder="Your Name *" required data-validation-required-message="Please enter your name.">
-                    <p class="help-block text-danger"></p>
+                <div class="col-md-5">
+                  <div class="row mb-4">
+                    <div class="col-12">
+                      <span class="contact-info">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i> Адреса
+                      </span><br>
+                      <span class="contact-info-inner">м.Львів, вул Васильківського, 9</span>
+                    </div>
                   </div>
-                  <div class="form-group">
-                    <input class="form-control" id="email" type="email" placeholder="Your Email *" required data-validation-required-message="Please enter your email address.">
-                    <p class="help-block text-danger"></p>
+                  <div class="row mb-4">
+                    <div class="col-12">
+                      <span class="contact-info">
+                        <i class="fa fa-phone" aria-hidden="true"></i> Телефон
+                      </span><br>
+                      <span class="contact-info-inner">068 255 79 42</span>
+                    </div>
                   </div>
-                  <div class="form-group">
-                    <input class="form-control" id="phone" type="tel" placeholder="Your Phone *" required data-validation-required-message="Please enter your phone number.">
-                    <p class="help-block text-danger"></p>
+                  <div class="row mb-4">
+                    <div class="col-12">
+                      <span class="contact-info">
+                        <i class="fa fa-envelope-o" aria-hidden="true"></i> Email
+                      </span><br>
+                      <span class="contact-info-inner">salon.massage.vo@gmail.com</span>
+                    </div>
+                  </div>
+                  <div class="row mb-3">
+                    <div class="col-12 text-center">
+                      <span class="contact-info-links">
+                        <a href="#"><i class="fa fa-facebook-official fa-3x p-2" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-instagram fa-3x p-2" aria-hidden="true"></i></a>
+                      </span><br>
+                    </div>
                   </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-7">
+                  <div class="row">
+                    <div class="col-6">
+                      <div class="form-group">
+                        <input class="form-control custom-input" id="name" type="text" placeholder="Ім'я *" required data-validation-required-message="Це поле необхідно заповнити.">
+                        <span class="bar"></span>
+                        <p class="help-block text-danger"></p>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="form-group">
+                        <input class="form-control" id="phone" type="tel" placeholder="Телефон *" required data-validation-required-message="Це поле необхідно заповнити.">
+                        <span class="bar"></span>
+                        <p class="help-block text-danger"></p>
+                      </div>
+                    </div>
+                  </div>
                   <div class="form-group">
-                    <textarea class="form-control" id="message" placeholder="Your Message *" required data-validation-required-message="Please enter a message."></textarea>
+                    <input class="form-control" id="email" type="email" placeholder="Email *" required data-validation-required-message="Це поле необхідно заповнити.">
+                    <span class="bar"></span>
+                    <p class="help-block text-danger"></p>
+                  </div>
+                  <div class="form-group">
+                    <textarea class="form-control" id="message" placeholder="Текст повідомлення *" required data-validation-required-message="Це поле необхідно заповнити."></textarea>
                     <p class="help-block text-danger"></p>
                   </div>
                 </div>
                 <div class="clearfix"></div>
-                <div class="col-lg-12 text-center">
+                <div class="col-lg-12 text-right">
                   <div id="success"></div>
-                  <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit">Send Message</button>
+                  <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit">Надіслати</button>
                 </div>
               </div>
             </form>
