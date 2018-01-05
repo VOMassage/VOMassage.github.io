@@ -11,12 +11,12 @@ p {
   line-height: 1.75; }
 
 a {
-  color: #fed136; }
+  color: #FB8F19; }
   a:hover {
-    color: #fec503; }
+    color: #dd7504; }
 
 .text-primary {
-  color: #fed136 !important; }
+  color: #FB8F19 !important; }
 
 h1,
 h2,
@@ -54,21 +54,21 @@ section {
   padding: 20px 40px; }
 
 .btn-primary {
-  background-color: #fed136;
-  border-color: #fed136; }
+  background-color: #FB8F19;
+  border-color: #FB8F19; }
   .btn-primary:active, .btn-primary:focus, .btn-primary:hover {
-    background-color: #fec810 !important;
-    border-color: #fec810 !important;
+    background-color: #ea7c04 !important;
+    border-color: #ea7c04 !important;
     color: white; }
   .btn-primary:active, .btn-primary:focus {
     box-shadow: 0 0 0 0.2rem rgba(254, 209, 55, 0.5) !important; }
 
 ::-moz-selection {
-  background: #fed136;
+  background: #FB8F19;
   text-shadow: none; }
 
 ::selection {
-  background: #fed136;
+  background: #FB8F19;
   text-shadow: none; }
 
 img::selection {
@@ -78,7 +78,27 @@ img::-moz-selection {
   background: transparent; }
 
 body {
-  -webkit-tap-highlight-color: #fed136; }
+  -webkit-tap-highlight-color: #FB8F19; }
+
+ul.social-buttons {
+  margin-bottom: 0; }
+
+ul.social-buttons li a {
+  font-size: 20px;
+  line-height: 40px;
+  display: block;
+  width: 40px;
+  height: 40px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  color: white;
+  border-radius: 100%;
+  outline: none;
+  background-color: #212529; }
+
+ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
+  background-color: #FB8F19; }
 
 #mainNav {
   background-color: #212529; }
@@ -89,7 +109,7 @@ body {
     text-transform: uppercase;
     color: white;
     border: 0;
-    background-color: #fed136;
+    background-color: #FB8F19;
     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
   #mainNav .navbar-brand .logo-top {
     height: 35px;
@@ -103,7 +123,7 @@ body {
     color: white;
     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
     #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
-      color: #fed136; }
+      color: #FB8F19; }
 
 @media (min-width: 992px) {
   #mainNav {
@@ -229,7 +249,7 @@ header.masthead {
       -moz-transition: all ease 0.5s;
       transition: all ease 0.5s;
       opacity: 0;
-      background: rgba(254, 209, 54, 0.9); }
+      background: rgba(251, 143, 25, 0.9); }
       #portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
         opacity: 1; }
       #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
@@ -383,7 +403,7 @@ header.masthead {
       color: white;
       border: 7px solid #e9ecef;
       border-radius: 100%;
-      background-color: #fed136; }
+      background-color: #FB8F19; }
       .timeline > li .timeline-image h4 {
         font-size: 10px;
         line-height: 14px;
@@ -483,42 +503,80 @@ header.masthead {
     margin-top: 0; }
 
 section#contact {
-  background-color: #212529;
-  background-image: url("../img/map-image.png");
-  background-repeat: no-repeat;
-  background-position: center; }
+  background-color: #9c9c9c; }
   section#contact .section-heading {
     color: #fff; }
   section#contact .form-group {
     margin-bottom: 25px; }
     section#contact .form-group input,
     section#contact .form-group textarea {
-      padding: 20px; }
+      padding: 20px;
+      border: none;
+      box-shadow: none; }
+    section#contact .form-group .bar {
+      position: relative;
+      display: block; }
+    section#contact .form-group .bar:before,
+    section#contact .form-group .bar:after {
+      content: '';
+      height: 3px;
+      width: 0;
+      bottom: 63px;
+      position: absolute;
+      background: #fff;
+      transition: 0.2s ease all; }
+    section#contact .form-group .bar:before {
+      left: 50%; }
+    section#contact .form-group .bar:after {
+      right: 50%; }
+    section#contact .form-group input.form-control:focus ~ .bar:before,
+    section#contact .form-group input.form-control:focus ~ .bar:after {
+      width: 50%; }
     section#contact .form-group input.form-control {
-      height: auto; }
+      height: auto;
+      background-color: #DAD9D7;
+      color: white;
+      border-radius: 0; }
     section#contact .form-group textarea.form-control {
-      height: 248px; }
-  section#contact .form-control:focus {
-    border-color: #fed136;
+      height: 248px;
+      background-color: #DAD9D7;
+      color: white;
+      resize: none; }
+  section#contact input.form-control:focus, section#contact input.form-control:active {
+    border: none;
     box-shadow: none; }
   section#contact ::-webkit-input-placeholder {
     font-weight: 700;
-    color: #ced4da;
-    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+    color: #fff;
+    font-family: 'roboto'; }
   section#contact :-moz-placeholder {
     font-weight: 700;
-    color: #ced4da;
-    /* Firefox 18- */
-    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+    color: #fff;
+    font-family: 'roboto';
+    /* Firefox 18- */ }
   section#contact ::-moz-placeholder {
     font-weight: 700;
-    color: #ced4da;
-    /* Firefox 19+ */
-    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+    color: #fff;
+    font-family: 'roboto';
+    /* Firefox 19+ */ }
   section#contact :-ms-input-placeholder {
     font-weight: 700;
-    color: #ced4da;
-    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+    color: #fff;
+    font-family: 'roboto'; }
+  section#contact .contact-info {
+    color: #fff;
+    font-size: 22px;
+    font-family: 'roboto'; }
+  section#contact .contact-info-inner {
+    color: #fff;
+    margin-left: 30px;
+    margin-bottom: 40px;
+    font-family: 'roboto'; }
+  section#contact .contact-info-links a {
+    color: #fff; }
+  section#contact .help-block {
+    font-family: 'roboto';
+    font-size: medium; }
 
 #map {
   height: 500px; }

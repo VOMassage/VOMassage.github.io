@@ -5,12 +5,12 @@ section#contact {
     color: $white;
   }
   .form-group {
-    border: 1px solid transparent;
-    box-shadow: none;
     margin-bottom: 25px;
     input,
     textarea {
       padding: 20px;
+      border: none;
+      box-shadow: none;
     }
     .bar {
       position: relative;
@@ -54,9 +54,9 @@ section#contact {
       resize: none;
     }
   }
-  .form-control:focus, .form-control:active {
+  input.form-control:focus, input.form-control:active {
+    border: none;
     box-shadow: none;
-    border: 1px solid transparent;
   }
   ::-webkit-input-placeholder {
     font-weight: 700;
