@@ -21,5 +21,10 @@
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 @mixin mistral {
-  font-family: 'mistral';
+  @font-face {
+  font-family: 'Mistral';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Mistral'), url('../vendor/fonts/MISTRAL.woff') format('woff');
+  }
 }

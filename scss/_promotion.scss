@@ -1,0 +1,19 @@
+section#promotion {
+    background-color: $background;
+
+    .promotion-header {
+        background-color: $custom-orange;
+
+        .main-lable {
+          color: $white;
+        }
+
+        .main-text {
+          color: $white;
+        }
+    }
+
+    .promotion-info {
+      background-color: $white;
+    }
+}
