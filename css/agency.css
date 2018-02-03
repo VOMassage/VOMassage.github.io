@@ -171,8 +171,14 @@ header.masthead {
       font-size: 25px;
       font-style: italic;
       line-height: 22px;
-      margin-bottom: 25px;
-      font-family: 'mistral'; }
+      margin-bottom: 25px; }
+
+@font-face {
+  header.masthead .intro-text .intro-lead-in {
+    font-family: 'Mistral';
+    font-style: normal;
+    font-weight: normal;
+    src: local("Mistral"), url("../vendor/fonts/MISTRAL.woff") format("woff"); } }
     header.masthead .intro-text .intro-heading {
       font-size: 50px;
       font-weight: 700;
@@ -190,8 +196,13 @@ header.masthead {
       font-size: 40px;
       font-style: italic;
       line-height: 40px;
-      margin-bottom: 25px;
-      font-family: 'mistral'; }
+      margin-bottom: 25px; }
+  @font-face {
+    header.masthead .intro-text .intro-lead-in {
+      font-family: 'Mistral';
+      font-style: normal;
+      font-weight: normal;
+      src: local("Mistral"), url("../vendor/fonts/MISTRAL.woff") format("woff"); } }
     header.masthead .intro-text .intro-heading {
       font-size: 75px;
       font-weight: 700;
@@ -235,6 +246,8 @@ header.masthead {
 #portfolio .portfolio-item {
   right: 0;
   margin: 0 0 15px; }
+  #portfolio .portfolio-item.big .portfolio-link, #portfolio .portfolio-item.big .portfolio-caption, #portfolio .portfolio-item.big .price-sticker {
+    max-width: 350px; }
   #portfolio .portfolio-item .portfolio-link {
     position: relative;
     border-radius: 5px 5px 0 0;
@@ -362,9 +375,11 @@ header.masthead {
   #about-us .border-right {
     border-right: 1px solid black; }
   #about-us .to-bottom {
-    position: absolute;
-    bottom: 0;
     padding-bottom: 0; }
+  #about-us .space-out {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between; }
 
 .timeline {
   position: relative;
@@ -599,3 +614,14 @@ footer {
   text-align: center; }
   footer img {
     margin-top: 12.5px; }
+
+section#promotion {
+  background-color: #DAD9D7; }
+  section#promotion .promotion-header {
+    background-color: #FB8F19; }
+    section#promotion .promotion-header .main-lable {
+      color: #fff; }
+    section#promotion .promotion-header .main-text {
+      color: #fff; }
+  section#promotion .promotion-info {
+    background-color: #fff; }
