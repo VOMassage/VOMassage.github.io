@@ -1,9 +1,15 @@
 // Styling for the portfolio section
 #portfolio {
   $max-wd: 300px;
+  $max-wd-big: 350px;
   .portfolio-item {
     right: 0;
     margin: 0 0 15px;
+    &.big {
+      .portfolio-link, .portfolio-caption, .price-sticker {
+        max-width: $max-wd-big;
+      }
+    }
     .portfolio-link {
       position: relative;
       border-radius: 5px 5px 0 0;

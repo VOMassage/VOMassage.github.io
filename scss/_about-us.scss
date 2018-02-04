@@ -4,8 +4,13 @@
 		border-right: 1px solid black;
 	}
 	.to-bottom {
-		position: absolute;
-		bottom: 0;
 		padding-bottom: 0;
+		margin-bottom: 0;
+	}
+	.space-out {
+		display: flex;
+
+		flex-flow: column nowrap;
+		justify-content: space-between;
 	}
 }
