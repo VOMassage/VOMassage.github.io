@@ -375,7 +375,8 @@ header.masthead {
   #about-us .border-right {
     border-right: 1px solid black; }
   #about-us .to-bottom {
-    padding-bottom: 0; }
+    padding-bottom: 0;
+    margin-bottom: 0; }
   #about-us .space-out {
     display: flex;
     flex-flow: column nowrap;
