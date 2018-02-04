@@ -51,9 +51,6 @@
               <a class="nav-link js-scroll-trigger" href="#about-us">Про нас</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#team">Команда</a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#contact">Контакти</a>
             </li>
           </ul>
@@ -75,23 +72,24 @@
     <section id="promotion">
       <div class="container">
         <div class="row">
-          <!-- <div class="col-3 promotion-header p-5">
-            <h1 class="main-lable display-3 text-center mt-5 mb-5">Акція</h1>
-            <h3 class="main-text text-center mt-5 mb-5">Душ Шарко</h3>
-            <h1 class="main-text text-center">80грн</h1>
-          </div>
-          <div class="col-5 promotion-image">
-            <img class="img-fluid promotion-image-inner" src="img/promotions/sharko.jpg" alt="Шарко">
-          </div>
-          <div class="col-3 promotion-info">
-            <p class="text-center">Дорогі наші клієнти, тільки у січні акційна пропоція на душ Шарко  (двома струменями).</h3>
-          </div> -->
-          <div class="container">
-            <div class="row">
-              <div class="col-12 promotion-image">
-                <img class="img-fluid" src="img/promotions/sharko.jpg" alt="Шарко">
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <!-- <li data-target="#carouselExampleIndicators" data-slide-to="1"></li> -->
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="img/promotions/valen.jpg" alt="Акція на день св.Валентина">
               </div>
             </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Попередня</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Наступна</span>
+            </a>
           </div>
         </div>
       </div>
@@ -118,7 +116,7 @@
             <div class="portfolio-caption">
               <h4>Душ Шарко</h4>
             </div>
-            <div class="price-sticker">80 грн</div>
+            <div class="price-sticker">120 грн</div>
           </div>
 
           <div class="col-sm-6 portfolio-item big">
@@ -150,10 +148,10 @@
             <div class="portfolio-caption">
               <h4>Класичний масаж всього тіла</h4>
             </div>
-            <div class="price-sticker">240 грн</div>
+            <div class="price-sticker">220 грн</div>
           </div>
           <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="portfolio-link" data-toggle="modal" href="#mTerap">
+            <a class="portfolio-link" data-toggle="modal" href="#mTerapBack">
               <div class="portfolio-hover">
                 <div class="portfolio-hover-content">
                   <i class="fa fa-plus fa-3x"></i>
@@ -164,7 +162,7 @@
             <div class="portfolio-caption">
               <h4>Терапевтичний масаж спини</h4>
             </div>
-            <div class="price-sticker">120 грн</div>
+            <div class="price-sticker">120 грн / 220 грн</div>
           </div>
           <div class="col-md-4 col-sm-6 portfolio-item">
             <a class="portfolio-link" data-toggle="modal" href="#mTerap">
@@ -178,21 +176,7 @@
             <div class="portfolio-caption">
               <h4>Терапевтичний масаж спини та кінцівок</h4>
             </div>
-            <div class="price-sticker">120 грн</div>
-          </div>
-          <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="portfolio-link" data-toggle="modal" href="#mPregn">
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
-                  <i class="fa fa-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid portfolio-img" src="img/massages/four.png" alt="">
-            </a>
-            <div class="portfolio-caption">
-              <h4>Масаж спини для вагітних жінок</h4>
-            </div>
-            <div class="price-sticker">150 грн</div>
+            <div class="price-sticker">200 грн</div>
           </div>
           <div class="col-md-4 col-sm-6 portfolio-item">
             <a class="portfolio-link" data-toggle="modal" href="#mCell">
@@ -206,7 +190,7 @@
             <div class="portfolio-caption">
               <h4>Антицелюлітний масаж</h4>
             </div>
-            <div class="price-sticker">220 грн</div>
+            <div class="price-sticker">220грн / 320грн</div>
           </div>
           <div class="col-md-4 col-sm-6 portfolio-item">
             <a class="portfolio-link" data-toggle="modal" href="#mHoney">
@@ -263,7 +247,7 @@
             <div class="portfolio-caption">
               <h4>Релакс-масаж</h4>
             </div>
-            <div class="price-sticker">240 грн</div>
+            <div class="price-sticker">240грн / 350грн</div>
           </div>
 
           </div>
@@ -410,7 +394,7 @@
                         захворювання опорно-рухового апарату, органів дихання, нервової системи.</p>
 
                     <ul class="list-inline">
-                      <li>Ціна: 240грн</li>
+                      <li>Ціна: 220грн</li>
                       <li>Тривалісь: 1 год</li>
                     </ul>
                   </div>
@@ -486,8 +470,8 @@
                       <p class="text-justify">Мабуть, цей масаж - найприємніший з перерахованих. Під час процедури відбувається вплив на певні точки тіла, виконується ряд дій, які призводять до відчуття легкої розслабленості. Масаж такого роду необхідний всім нам час від часу, тому що в сучасному житті часто зустрічаються стресові ситуації. Після процедур масажу заспокоюється нервова система, відновлюється дихання, розслабляються м'язи, покращується робота внутрішніх органів.</p>
 
                     <ul class="list-inline">
-                      <li>Ціна: 240грн</li>
-                      <li>Тривалісь: 1 год</li>
+                      <li>Ціна: 240грн / 350грн</li>
+                      <li>Тривалісь: 60хв / 90хв</li>
                     </ul>
                   </div>
                 </div>
@@ -516,17 +500,84 @@
               <div class="col-lg-9 mx-auto">
                 <div class="modal-body">
                   <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase">Терапевтичний масаж спини або всього тіла</h2>
+                  <h2 class="text-uppercase">Терапевтичний масаж спини та кінцівок</h2>
                   <div class="row">
                     <div class="col-md-6">
                       <img class="img-fluid" src="img/massages/two.png" alt="">
                     </div>
                     <div class="col-md-6">
-                      <p class="text-justify">Завдяки своєму комплексному впливу на організм лікувальний масаж визнаний високоефективним методом відновлювальної терапії, тобто включається в програму реабілітації пацієнтів, що перенесли травми, тривалий перебіг хронічних захворювань. Здоровим пацієнтам він рекомендується в якості профілактики розвитку захворювань, для зміцнення імунної системи організму, поліпшення самопочуття, підвищення працездатності.</p>
+                       <p class="text-justify">Завдяки своєму комплексному впливу на організм лікувальний масаж визнаний високоефективним методом відновлювальної терапії, тобто включається в програму реабілітації пацієнтів, що перенесли травми, тривалий перебіг хронічних захворювань. Здоровим пацієнтам він рекомендується в якості профілактики розвитку захворювань, для зміцнення імунної системи організму, поліпшення самопочуття, підвищення працездатності.</p>
+
+                    <ul class="list-inline">
+                      <li>Ціна: 200грн</li>
+                      <li>Тривалісь: 45хв</li>
+                    </ul>
+                  </div>
+                </div>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="fa fa-times"></i>
+                    Закрити </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="mTerapBack" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-9 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h2 class="text-uppercase">Терапевтичний масаж спини</h2>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <img class="img-fluid" src="img/massages/two.png" alt="">
+                    </div>
+                    <div class="col-md-6">
+
+                      <p class="text-justify">
+                        Терапевтичний або лікувальний масаж спини стане для Вас справжнім порятунком, якщо Вас турбують:
+                      </p>
+
+                      <ul class="text-left">
+                        <li>болі в шиї, спині та попереку</li>
+                        <li>остеохондроз шийного, грудного, поперекового відділів хребта</li>
+                        <li>порушення постави</li>
+                        <li>радикуліт шийного, грудного, поперекового, крижового відділів хребта</li>
+                        <li>грижі хребта</li>
+                        <li>сколіоз</li>
+                        <li>емоційне виснаження, розумова та фізична перевтома</li>
+                        <li>запаморочення, часті головні болі, оніміння рук</li>
+                      </ul>
+
+                      <p class="text-justify">
+                        Ефект після масажу спини:
+                      </p>
+
+                      <ul class="text-left">
+                        <li>Позбавлення м'язової напруги</li>
+                        <li>Ви зможете повністю розслабитися, відволіктися від щоденних турбот</li>
+                        <li>Покращення психоемоційного стану</li>
+                        <li>Зникнення головного болю, болів у спині, шиї, руках</li>
+                        <li>Нормалізація сну</li>
+                        <li>Підвищення опірності організму до застудних та інших недуг</li>
+                        <li>Покращення пам'яті та концентрації уваги</li>
+                      </ul>
 
                     <ul class="list-inline">
                       <li>Ціна: 120грн / 220грн</li>
-                      <li>Тривалісь: 1 год</li>
+                      <li>Тривалісь: 30хв / 1 год</li>
                     </ul>
                   </div>
                 </div>
@@ -603,8 +654,8 @@
                         Фахівці рекомендують використовувати душ Шарко для позбавлення від целюліту: він допомагає коректувати фігуру, виводити з організму токсини і шлаки і розщеплювати жири. 
                         До цього можна додати тонізуючу, заспокійливу і загальнозміцнюючу дію, і тому душ Шарко часто застосовується з лікувально-профілактичною метою, разом з гідромасажем, а також з лікувальними ваннами - з екстрактами трав, ефірними маслами, морською сіллю і т.д. </p>
                     <ul class="list-inline">
-                      <li>Ціна: 80грн</li>
-                      <li>Тривалісь: 1 год</li>
+                      <li>Ціна: 120грн</li>
+                      <li>Тривалісь: 10хв</li>
                     </ul>
                   </div>
                 </div>
@@ -642,7 +693,7 @@
                       <p class="text-justify">Підводний ручний масаж – приємний спосіб позбутись зайвих сантиметрів і целюліту. Під дією водного струменя на проблемні місця активізується кровообіг, пришвидшується лімфотік і покращується обмін речовин. Тому виводиться все зайве, а шкіра стає гладкою і пружною. Оскільки масаж роблять під водою, він безпечний для шкіри і тканин, і разом з аромотерапією дарує відчуття повного релаксу.</p>
                     <ul class="list-inline">
                       <li>Ціна: 120грн</li>
-                      <li>Тривалісь: 1 год</li>
+                      <li>Тривалісь: 25хв</li>
                     </ul>
                   </div>
                 </div>
@@ -680,7 +731,7 @@
                       <p class="text-justify">Медовий масаж  допомагає зняти напругу і вивести токсини з організму. Медовий масаж збільшує дихання через шкіру і покращує кровотік. Мед глибоко проникає в поверхневі тканини тіла, вбирає в себе всі накопичені там шлаки, внаслідок чого через 15-20 хвилин медового масажу прозорий мед, нанесений на тіло, набуває темний, іноді сіруватий, відтінок. В результаті медового масажу підвищується еластичність і тургор шкіри, руйнуються підшкірні жирові відкладення.
 Медовий масаж — одне з кращих і найбільш ефективних засобів боротьби з целюлітом. Він надає дивовижне омолоджуючу лікування, стимулює обмінні процеси в тканинах, сприяє очищенню організму від токсинів, тонізує м’язи і корегує фігуру.</p>
                     <ul class="list-inline">
-                      <li>Ціна: 120грн</li>
+                      <li>Ціна: 260грн</li>
                       <li>Тривалісь: 1 год</li>
                     </ul>
                   </div>
@@ -758,8 +809,8 @@
 Завдяки антицелюлітному масажу вдається максимально поліпшити кровообіг у ділянках, що масажуються. А отже, відновити мікроциркуляцію та стимулювати розвиток еластину і колагену. Внаслідок цього зменшується кількість жирових клітин і зростає кількість гормонів у крові, що стимулює вивільнення жиру з клітин.
 Ручний антицелюлітний масаж в нашій студії бореться з першопричиною появи целюліту. Його суть - глибокий вплив на проблемні зони тіла. Це активізує роботу клітин і процеси внутрішньоклітинного обміну речовин. Глибока масажна дія сприяє розсмоктуванню фіброзного каркасу клітин, виведенню шлаків та зайвої міжтканинної рідини, прискорює кровотік. В результаті Ви позбудетеся зайвих кілограмів, об’ємів і целюлітних утворень.</p>
                     <ul class="list-inline">
-                      <li>Ціна: 120грн</li>
-                      <li>Тривалісь: 1 год</li>
+                      <li>Ціна: 220грн / 320грн</li>
+                      <li>Тривалісь: 60хв / 90хв</li>
                     </ul>
                   </div>
                 </div>
