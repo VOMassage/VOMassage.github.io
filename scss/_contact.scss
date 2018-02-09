@@ -90,6 +90,13 @@ section#contact {
     margin-left: 30px;
     margin-bottom: 40px;
     @include roboto;
+
+    &.work-time-day {
+      width: 60px;
+      text-align: center;
+      display: inline-block;
+      margin-bottom: 0;
+    }
   }
 
   .contact-info-links {
