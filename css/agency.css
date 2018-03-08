@@ -238,19 +238,19 @@ header.masthead {
     #services .service-right {
       text-align: right; }
 
-#portfolio .portfolio-item {
+#portfolio-massage .portfolio-item, #portfolio-cosmetology .portfolio-item {
   right: 0;
   margin: 0 0 15px; }
-  #portfolio .portfolio-item.big .portfolio-link, #portfolio .portfolio-item.big .portfolio-caption, #portfolio .portfolio-item.big .price-sticker {
+  #portfolio-massage .portfolio-item.big .portfolio-link, #portfolio-massage .portfolio-item.big .portfolio-caption, #portfolio-massage .portfolio-item.big .price-sticker, #portfolio-cosmetology .portfolio-item.big .portfolio-link, #portfolio-cosmetology .portfolio-item.big .portfolio-caption, #portfolio-cosmetology .portfolio-item.big .price-sticker {
     max-width: 350px; }
-  #portfolio .portfolio-item .portfolio-link {
+  #portfolio-massage .portfolio-item .portfolio-link, #portfolio-cosmetology .portfolio-item .portfolio-link {
     position: relative;
     border-radius: 5px 5px 0 0;
     display: block;
     max-width: 300px;
     margin: 0 auto;
     cursor: pointer; }
-    #portfolio .portfolio-item .portfolio-link .portfolio-hover {
+    #portfolio-massage .portfolio-item .portfolio-link .portfolio-hover, #portfolio-cosmetology .portfolio-item .portfolio-link .portfolio-hover {
       position: absolute;
       border-radius: 5px 5px 0 0;
       width: 100%;
@@ -260,9 +260,9 @@ header.masthead {
       transition: all ease 0.5s;
       opacity: 0;
       background: rgba(251, 143, 25, 0.9); }
-      #portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
+      #portfolio-massage .portfolio-item .portfolio-link .portfolio-hover:hover, #portfolio-cosmetology .portfolio-item .portfolio-link .portfolio-hover:hover {
         opacity: 1; }
-      #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
+      #portfolio-massage .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content, #portfolio-cosmetology .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
         font-size: 20px;
         position: absolute;
         top: 50%;
@@ -271,26 +271,27 @@ header.masthead {
         margin-top: -12px;
         text-align: center;
         color: white; }
-        #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i {
+        #portfolio-massage .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i, #portfolio-cosmetology .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i {
           margin-top: -12px; }
-        #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3,
-        #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4 {
+        #portfolio-massage .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3,
+        #portfolio-massage .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4, #portfolio-cosmetology .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3,
+        #portfolio-cosmetology .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4 {
           margin: 0; }
-    #portfolio .portfolio-item .portfolio-link .portfolio-img {
+    #portfolio-massage .portfolio-item .portfolio-link .portfolio-img, #portfolio-cosmetology .portfolio-item .portfolio-link .portfolio-img {
       border-radius: 5px 5px 0 0; }
-  #portfolio .portfolio-item .portfolio-caption {
+  #portfolio-massage .portfolio-item .portfolio-caption, #portfolio-cosmetology .portfolio-item .portfolio-caption {
     max-width: 300px;
     min-height: 60px;
     margin: 0 auto;
     padding: 20px;
     text-align: center;
     background-color: #fff; }
-    #portfolio .portfolio-item .portfolio-caption h4 {
+    #portfolio-massage .portfolio-item .portfolio-caption h4, #portfolio-cosmetology .portfolio-item .portfolio-caption h4 {
       margin: 0;
       min-height: 60px;
       text-transform: none;
       font-family: 'roboto'; }
-  #portfolio .portfolio-item .price-sticker {
+  #portfolio-massage .portfolio-item .price-sticker, #portfolio-cosmetology .portfolio-item .price-sticker {
     margin: auto;
     border-radius: 0 0 5px 5px;
     max-width: 300px;
@@ -301,7 +302,7 @@ header.masthead {
     background-color: #FB8F19;
     font-weight: bold; }
 
-#portfolio * {
+#portfolio-massage *, #portfolio-cosmetology * {
   z-index: 2; }
 
 @media (min-width: 767px) {
@@ -319,6 +320,9 @@ header.masthead {
     .portfolio-modal .modal-content h2 {
       font-size: 3em;
       margin-bottom: 15px; }
+    @media (max-width: 768px) {
+      .portfolio-modal .modal-content h2 {
+        font-size: 2rem; } }
     .portfolio-modal .modal-content p {
       margin-bottom: 30px; }
     .portfolio-modal .modal-content p.item-intro {
